@@ -26,7 +26,7 @@ O Rápido Linense é um aplicativo que fornece informações sobre os horários 
 
 ## Contribuição
 
-Contribuições são bem-vindas! Se você encontrar algum problema ou tiver alguma sugestão, sinta-se à vontade para abrir uma [issue](https://github.com/seu-usuario/seu-repositorio/issues) ou enviar um pull request.
+Contribuições são bem-vindas! Se você encontrar algum problema ou tiver alguma sugestão, sinta-se à vontade para abrir uma [issue](https://github.com/Jacker-s/Rapido-Linense)) ou enviar um pull request.
 
 ## Licença
 
