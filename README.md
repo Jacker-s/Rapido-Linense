@@ -1,40 +1,34 @@
-# Rápido Linense
+# Android-Webview
+O projeto consiste no desenvolvimento de um aplicativo Android que utiliza a funcionalidade WebView para exibir um website em tela cheia dentro de um contêiner nativo. O objetivo é proporcionar aos usuários uma experiência imersiva ao acessar conteúdo web por meio do aplicativo.
 
-O Rápido Linense é um aplicativo que fornece informações sobre os horários de ônibus da linha Linense. Com ele, você pode consultar os horários de partida e chegada, verificar as rotas disponíveis e muito mais.
 
-## Funcionalidades
+Descrição do Projeto - App Android WebView
+Este projeto consiste em um aplicativo Android que utiliza a funcionalidade WebView para exibir um website em tela cheia dentro de um contêiner nativo. Com essa abordagem, é possível criar um aplicativo que oferece uma experiência imersiva ao usuário, ocupando toda a tela do dispositivo.
 
-- Consulta de horários de ônibus
-- Exibição das rotas disponíveis
-- Informações sobre os horários de partida e chegada
-- Interface fácil de usar
+Funcionalidades Principais
+Exibição de Website em Tela Cheia: O aplicativo carrega um website específico dentro de uma WebView e oferece suporte para exibi-lo em tela cheia, proporcionando uma experiência envolvente para os usuários.
 
-## Tecnologias utilizadas
+Navegação Simples: Os usuários podem navegar pelo website carregado na WebView de forma similar à experiência de um navegador web padrão, com suporte para recursos como navegação para frente, navegação para trás, atualização da página e exibição de URLs.
 
-Java: A linguagem de programação oficial do Android. É amplamente utilizada para desenvolver aplicativos nativos do Android e interagir com a API do Android.
+Personalização da Interface: O aplicativo oferece uma interface intuitiva e personalizável, com a possibilidade de adicionar elementos visuais próprios, como um logotipo, barra de navegação customizada ou qualquer outro elemento de identidade visual.
 
-Kotlin: Uma linguagem de programação moderna para o desenvolvimento de aplicativos Android. Ela é totalmente compatível com o Java e oferece recursos adicionais, como segurança de tipo melhorada, código conciso e suporte a programação funcional.
+Suporte a Recursos Web: Como a WebView é uma solução nativa do Android, o aplicativo tem suporte para diversos recursos web, incluindo exibição de páginas responsivas, reprodução de vídeos, execução de JavaScript e interação com formulários e elementos web.
 
-HTML/CSS/JavaScript: Essas linguagens são usadas para desenvolver a interface do usuário do aplicativo WebView. O HTML é usado para estruturar o conteúdo da página, o CSS é utilizado para estilizar a aparência e o JavaScript adiciona interatividade e funcionalidade à página.
+Funcionamento Offline: Caso o website carregado na WebView seja desenvolvido com suporte offline, o aplicativo pode armazenar o conteúdo em cache, permitindo que os usuários acessem o website mesmo quando estiverem offline.
 
-XML: É uma linguagem de marcação utilizada para definir a estrutura e a aparência da interface do usuário no Android, como layouts de tela, elementos visuais e recursos.                                                                                                                                                          
+Como Utilizar o Projeto
+Clone o repositório para o seu ambiente de desenvolvimento local.
 
-## Como executar o aplicativo
+Abra o projeto no Android Studio.
 
-1. Faça o download do projeto do aplicativo Rápido Linense em seu computador.
-2. Abra o Android Studio e importe o projeto.
-3. Certifique-se de ter configurado corretamente o ambiente de desenvolvimento do Android.
-4. Navegue até o arquivo MainActivity.java no projeto.
-5. Dentro do método onCreate, localize o trecho de código onde a WebView é inicializada.
-6. Altere o URL da WebView para o caminho local do arquivo index.html em seu projeto. Por exemplo:
+Personalize a interface do aplicativo de acordo com suas preferências, como adicionar um logotipo personalizado ou alterar a aparência da barra de navegação.
 
-webView.loadUrl("file:///android_asset/index.html");
+Configure o URL do website que será carregado na WebView, especificando-o no código-fonte.
 
-7. Execute o aplicativo em um dispositivo Android ou em um emulador.
-## Contribuição
+Execute o aplicativo em um emulador ou dispositivo Android conectado.
+ 
+ 
+Contato
+Para qualquer dúvida ou sugestão relacionada a este projeto, entre em contato através do meu email (jackson@silvascorp.tk).
 
-Contribuições são bem-vindas! Se você encontrar algum problema ou tiver alguma sugestão, sinta-se à vontade para abrir uma [issue](https://github.com/Jacker-s/Rapido-Linense)) ou enviar um pull request.
-
-## Licença
-
-Este projeto está licenciado sob a Licença [MIT](https://raw.githubusercontent.com/Jacker-s/Rapido-Linense/main/LICENSE).
+Esperamos que este projeto seja útil e facilite o desenvolvimento de aplicativos Android com WebView, oferecendo uma experiência em tela cheia para os usuários. Aproveite!
