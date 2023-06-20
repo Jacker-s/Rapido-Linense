@@ -12,7 +12,7 @@
 </head>
 <style>
         body {
-            background-color: #23a8df;
+            background-color: #1ce891;
             font-family: 'Roboto', Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -240,7 +240,71 @@ li {
   margin-bottom: 8px;
   font-size: 14px;
 }
-    </style>
+/* Estilos do botão flutuante */
+  .widget-float {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .widget-button {
+    padding: 10px;
+    background-color: #23a8df;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .widget-button:hover {
+    background-color: #1c8dbb;
+  }
+
+  /* Estilos do popup de contato */
+  .widget-container {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    left: 20px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 300px; /* Ajuste a largura conforme necessário */
+    max-height: 400px; /* Ajuste a altura conforme necessário */
+    overflow-y: auto;
+  }
+
+  .widget-container h2 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  .widget-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .widget-submit {
+    padding: 10px 20px;
+    background-color: #23a8df;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .widget-submit:hover {
+    background-color: #1c8dbb;
+  }
+</style>
 <body>
 <button id="popup-button" class="floating-button material-icons">info</button>
 
@@ -255,6 +319,25 @@ li {
     </div>
 </div>
 
+<div class="widget-float">
+    <button class="widget-button" onclick="toggleWidget()">Contato</button>
+</div>
+
+<div id="widget-container" class="widget-container">
+    <h2>Entre em Contato</h2>
+    <form action="https://formspree.io/f/mvonyzew" method="POST">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" class="widget-input" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="_replyto" class="widget-input" required>
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" rows="5" class="widget-input" required></textarea>
+
+        <input type="submit" value="Enviar" class="widget-submit">
+    </form>
+</div>
 
 <main>
     <div id="rotas">
@@ -285,6 +368,18 @@ li {
         <div id="horarios-container"></div>
     </div>
 </div>
+
+<script>
+  // Função para alternar a exibição do popup de contato
+  function toggleWidget() {
+    var widgetContainer = document.getElementById('widget-container');
+    if (widgetContainer.style.display === 'block') {
+      widgetContainer.style.display = 'none';
+    } else {
+      widgetContainer.style.display = 'block';
+    }
+  }
+</script>
 <script>
         var popupButton = document.getElementById('popup-button');
         var popup = document.getElementById('popup');
